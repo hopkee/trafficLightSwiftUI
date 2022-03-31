@@ -12,7 +12,6 @@
 		3522802E27F6242E005CC85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3522802D27F6242E005CC85F /* Assets.xcassets */; };
 		3522803127F6242E005CC85F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3522803027F6242E005CC85F /* Preview Assets.xcassets */; };
 		3522803827F62A7F005CC85F /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522803727F62A7F005CC85F /* TrafficLight.swift */; };
-		3522803A27F62DB5005CC85F /* LightStatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522803927F62DB5005CC85F /* LightStatesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		3522802D27F6242E005CC85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3522803027F6242E005CC85F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3522803727F62A7F005CC85F /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
-		3522803927F62DB5005CC85F /* LightStatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStatesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 				3522802927F6242B005CC85F /* TrafficLightSwiftUIApp.swift */,
 				3522802B27F6242B005CC85F /* ContentView.swift */,
 				3522803727F62A7F005CC85F /* TrafficLight.swift */,
-				3522803927F62DB5005CC85F /* LightStatesManager.swift */,
 				3522802D27F6242E005CC85F /* Assets.xcassets */,
 				3522802F27F6242E005CC85F /* Preview Content */,
 			);
@@ -143,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3522803A27F62DB5005CC85F /* LightStatesManager.swift in Sources */,
 				3522802C27F6242B005CC85F /* ContentView.swift in Sources */,
 				3522803827F62A7F005CC85F /* TrafficLight.swift in Sources */,
 				3522802A27F6242B005CC85F /* TrafficLightSwiftUIApp.swift in Sources */,

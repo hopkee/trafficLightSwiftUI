@@ -9,42 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var trafficLightState: TrafficLightStates = .greenYellowSignals
+    @State var trafficLightState: TrafficLightStates = .none
     
     var body: some View {
         VStack(spacing: 50) {
-            ZStack{
-                Rectangle()
-                    .fill(Color.black)
-                    .frame(width: 180, height: 500)
-                    .cornerRadius(20)
-                TrafficLight(state: trafficLightState)
-
-            }
+            TrafficLight(state: trafficLightState)
             
             Button(action: {
-                self.changeSignal()
+                self.trafficLightState.next()
             },
                    label: {
                 Text("Change state")
             })
             .padding()
-            .background(Color.indigo)
+            .background(Color.blue)
             .foregroundColor(Color.white)
         }
     }
     
-    private func changeSignal() {
-        if trafficLightState == .greenSignal {
-            trafficLightState = .greenYellowSignals
-        } else if trafficLightState == .greenYellowSignals {
-            trafficLightState = .redSignal
-        } else if trafficLightState == .redSignal {
-            trafficLightState = .yellowSignal
-        } else if trafficLightState == .yellowSignal {
-            trafficLightState = .greenSignal
-        }
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
